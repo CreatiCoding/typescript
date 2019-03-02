@@ -7,10 +7,10 @@ interface Profile {
     age: number;
 }
 
-type Profile1 = keyof Profile;
-type Profile2 = keyof Profile[];
-type Profile3 = keyof { [x: string]: Profile };
-type Profile4 = keyof Profile["name"];
+type Profile1 = keyof Profile;					// interface
+type Profile2 = keyof Profile[];				// array
+type Profile3 = keyof { [x: string]: Profile };	// 익명 배열 요소 문자열 타입 // any 문자열 가능
+type Profile4 = keyof Profile["name"];			// Profile의 name이라는 문자열 타입
 
 let pValue1: Profile1 = "name";
 // let pValue2: Profile1 = "name2";
