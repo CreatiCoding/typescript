@@ -164,7 +164,9 @@ function on(event: EventType, callback: (message: string) => any) {
 on(myEvent, (message) => console.log(message));
 ```
 
-> @creco: `type` 변수를 선언하여 할당받을 문자열 리터럴을 정해주고 값을 강제하여 할당 받을 수 있습니다.
+> @creco: `type` 별칭을 선언하여 할당받을 문자열 리터럴을 정해주고 값을 강제하여 할당 받을 수 있습니다.
+>
+> 이 내용은 10장에서 더 자세히 다룰 예정입니다.
 
 ### 9.2.2 룩업 타입
 
